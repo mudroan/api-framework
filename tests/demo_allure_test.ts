@@ -2,6 +2,8 @@ import { assert } from 'chai';
 import CoreApi from '../src/http/CoreApi';
 import { allure } from 'allure-mocha/runtime';
 import Steps from '../src/steps/Steps';
+import { parseCommandLine } from 'typescript';
+import { randomFill } from 'crypto';
 
 describe('Проверка имени кота', async () => {
   it('allure', async () => {

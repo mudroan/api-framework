@@ -6,7 +6,6 @@ describe('Проверка функционала добавления кото�
     const name = 'Вики';
 
     const response = await CoreApi.getCatById(101368);
-
     assert.equal(response.data.cat.name, name, 'Имена не соответствуют');
   });
 
